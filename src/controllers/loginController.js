@@ -21,7 +21,7 @@ const login = async function(req, res){
       },
       "functionup-plutonium-group30"
     );
-    res.setHeader("x-auth-token", token);
+    res.setHeader("x-api-key", token);
     res.send({ status: true, data: token });
   };
   
